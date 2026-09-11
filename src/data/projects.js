@@ -1,5 +1,10 @@
 import amdShopImage from "../assets/images/img1.png";
 import coffeeImage from "../assets/images/img3.png";
+import amdtablet from "../assets/images/img5.png";
+import amdmobile from "../assets/images/img4.png";
+import nalarImage from "../assets/images/img6.jpg";
+import nalartablet from "../assets/images/img7.jpg";
+import nalarMobile from "../assets/images/img8.jpg";
 
 export const projects = [
   {
@@ -9,7 +14,7 @@ export const projects = [
     stack: ["React", "Tailwind CSS", "Node.js"],
     description:
       "Platform e-commerce dengan alur belanja lengkap — katalog produk, keranjang, hingga checkout — dibangun dengan arsitektur full-stack yang rapi dan mudah dikembangkan.",
-    images: [amdShopImage, coffeeImage],
+    images: [amdShopImage, amdmobile, amdtablet],
     link: "https://amdshop.vercel.app/",
   },
 
@@ -40,5 +45,7 @@ export const projects = [
     stack: ["HTML", "CSS", "JavaScript"],
     description:
       "Web berbasis AI yang membantu mendeteksi dan mengukur tingkat minat belajar terhadap anak-anak, dan dapat memberikan rekomendasi materi pembelajaran yang sesuai dengan minat mereka.",
+    images: [nalarImage, nalartablet, nalarMobile],
+    link: "https://nalar.netlify.app/",
   },
 ];

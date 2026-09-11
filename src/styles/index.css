@@ -939,7 +939,7 @@ section {
 .modal-box {
   position: relative;
   background: var(--paper);
-  border-radius: 10px;
+  border-radius: 20px;
   width: 100%;
   max-width: 560px;
   max-height: 85vh;
