@@ -1,10 +1,12 @@
 import amdShopImage from "../assets/images/img1.png";
 import coffeeImage from "../assets/images/img3.png";
-import amdtablet from "../assets/images/img5.png";
-import amdmobile from "../assets/images/img4.png";
+import amdTablet from "../assets/images/img5.jpg";
+import amdMobile from "../assets/images/img4.jpg";
 import nalarImage from "../assets/images/img6.jpg";
 import nalartablet from "../assets/images/img7.jpg";
 import nalarMobile from "../assets/images/img8.jpg";
+import coffeeProject from "../assets/images/img9.jpg";
+import coffeeMockup from "../assets/images/img10.jpg";
 
 export const projects = [
   {
@@ -14,7 +16,7 @@ export const projects = [
     stack: ["React", "Tailwind CSS", "Node.js"],
     description:
       "Platform e-commerce dengan alur belanja lengkap — katalog produk, keranjang, hingga checkout — dibangun dengan arsitektur full-stack yang rapi dan mudah dikembangkan.",
-    images: [amdShopImage, amdmobile, amdtablet],
+    images: [amdShopImage, amdMobile, amdTablet],
     link: "https://amdshop.vercel.app/",
   },
 
@@ -30,12 +32,23 @@ export const projects = [
   {
     name: "Coffeeshop Design",
     type: "UI Design · transactional",
-    status: "LIVE",
+    status: "Prototype",
     stack: ["Figma", "Adobe Illustrator"],
     description:
       "Sebuah UI design mobile app, yang dirancang untuk memudahkan pelanggan dalam memesan kopi di kedai kopi favorit mereka, dengan fokus pada pengalaman pengguna yang intuitif dan visual yang menarik.",
-    images: [coffeeImage],
-    link: "https://www.figma.com/file/0Z7g1k5J3j3j3j3j3j3j3/Coffeeshop-Design?node-id=0%3A1&t=abc123",
+    images: [coffeeImage, coffeeProject, coffeeMockup],
+    link: "https://www.figma.com/design/tJY7V2KoUVPlb1okU6AaDD/Design-Coffee-Shop?node-id=0-1&t=hSH4v13Xz2dDyEOR-1",
+  },
+
+  {
+    name: "Nalar.",
+    type: "AI Web App · Group Project",
+    status: "LIVE",
+    stack: ["HTML", "CSS", "JavaScript"],
+    description:
+      "Web berbasis AI yang membantu mendeteksi dan mengukur tingkat minat belajar terhadap anak-anak, dan dapat memberikan rekomendasi materi pembelajaran yang sesuai dengan minat mereka.",
+    images: [nalarImage, nalartablet, nalarMobile],
+    link: "https://nalar.netlify.app/",
   },
 
   {
