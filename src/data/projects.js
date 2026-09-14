@@ -27,6 +27,8 @@ export const projects = [
     stack: ["React", "Tailwind CSS"],
     description:
       "Aplikasi pencatatan keuangan pribadi yang dirancang untuk pola pengeluaran sehari-hari ala Indonesia, dari jajan warung sampai transfer digital.",
+    images: [amdShopImage, amdMobile, amdTablet],
+    link: "https://cashin.vercel.app/",
   },
 
   {

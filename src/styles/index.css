@@ -895,6 +895,9 @@ section {
   color: var(--muted);
   margin: 0 0 18px;
   text-align: justify;
+  hyphens: auto;
+  word-spacing: normal;
+  letter-spacing: normal;
 }
 
 .project-stack {
@@ -1095,6 +1098,7 @@ section {
   border-top: 1px solid var(--line-dark);
   display: flex;
   align-items: center;
+  text-align: left;
   gap: 8px;
 }
 
@@ -1212,7 +1216,6 @@ footer {
 }
 
 /* Tablet */
-
 @media (min-width: 701px) and (max-width: 900px) {
   .navbar-container {
     padding: 14px 20px;
@@ -1416,5 +1419,60 @@ footer {
 @media (prefers-reduced-motion: reduce) {
   .badge-dot {
     animation: none;
+  }
+}
+
+@media (max-width: 420px) {
+  .contact-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .resume-container {
+    grid-template-columns: 1fr;
+  }
+  .eyebrow {
+    font-size: 24px;
+  }
+  .badge {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .hero-description {
+    margin-top: 34px;
+  }
+  .modal-name {
+    text-align: left;
+  }
+  .modal-box {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .modal-box {
+    max-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .modal-image {
+    flex-shrink: 0;
+  }
+
+  .modal-content {
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    padding: 20px;
+  }
+  .modal-description {
+    max-height: 150px;
+    overflow-y: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    text-align: justify;
+    word-spacing: normal;
+    letter-spacing: normal;
+  }
+  .modal-description::-webkit-scrollbar {
+    display: none;
   }
 }
