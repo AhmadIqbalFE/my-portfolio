@@ -1399,6 +1399,11 @@ footer {
   .skills-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+  .modal-description {
+    text-align: justify;
+    word-spacing: normal;
+    letter-spacing: normal;
+  }
 }
 
 @media (max-width: 720px) {
@@ -1474,5 +1479,23 @@ footer {
   }
   .modal-description::-webkit-scrollbar {
     display: none;
+  }
+  .project-type {
+    text-align: left;
+  }
+  .project-name {
+    line-height: 1.2;
+  }
+  .modal-name {
+    line-height: 1.2;
+  }
+  .project-description {
+    display: -webkit-box;
+    text-align: justify;
+    word-spacing: normal;
+    letter-spacing: normal;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
 }

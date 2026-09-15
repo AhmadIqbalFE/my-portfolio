@@ -4,6 +4,8 @@ import Eyebrow from "../common/Eyebrow";
 import carousel1 from "../../assets/images/img1.png";
 import carousel2 from "../../assets/images/img2.png";
 import carousel3 from "../../assets/images/img3.png";
+import carousel4 from "../../assets/images/img4.jpg";
+import carousel5 from "../../assets/images/img7.jpg";
 import ImageCarousel from "../ImageCarousel";
 
 function About() {
@@ -16,7 +18,15 @@ function About() {
               <Eyebrow>About</Eyebrow>
 
               <div className="image-carousel">
-                <ImageCarousel images={[carousel1, carousel2, carousel3]} />
+                <ImageCarousel
+                  images={[
+                    carousel1,
+                    carousel2,
+                    carousel3,
+                    carousel4,
+                    carousel5,
+                  ]}
+                />
               </div>
 
               <h2 className="tagline-carousel">

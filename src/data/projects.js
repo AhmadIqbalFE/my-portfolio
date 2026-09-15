@@ -7,6 +7,8 @@ import nalartablet from "../assets/images/img7.jpg";
 import nalarMobile from "../assets/images/img8.jpg";
 import coffeeProject from "../assets/images/img9.jpg";
 import coffeeMockup from "../assets/images/img10.jpg";
+import FitnessImage from "../assets/images/img11.jpg";
+import FitnessMockup from "../assets/images/img12.jpg";
 
 export const projects = [
   {
@@ -15,7 +17,7 @@ export const projects = [
     status: "LIVE",
     stack: ["React", "Tailwind CSS", "Node.js"],
     description:
-      "Platform e-commerce dengan alur belanja lengkap — katalog produk, keranjang, hingga checkout — dibangun dengan arsitektur full-stack yang rapi dan mudah dikembangkan.",
+      "Platform e-commerce dengan alur belanja lengkap mulai dari katalog produk, keranjang, hingga checkout serta dibangun dengan arsitektur full-stack yang rapi dan mudah dikembangkan. Website yang dibangun menggunakan library React untuk bagian frontend, Tailwind CSS untuk styling, dan Node.js untuk bagian backend. Dengan menggunakan teknologi ini, website dapat memberikan pengalaman pengguna yang responsif dan interaktif, serta dapat menangani permintaan pengguna dengan cepat dan efisien. Kedepannya saya akan menambahkan fitur payment gateway, history order & payment hingga API integrated dengan marketplace serta Dashboard admin untuk mengelola produk, pesanan, dan pelanggan.",
     images: [amdShopImage, amdMobile, amdTablet],
     link: "https://amdshop.vercel.app/",
   },
@@ -54,13 +56,13 @@ export const projects = [
   },
 
   {
-    name: "Nalar.",
-    type: "AI Web App · Group Project",
-    status: "LIVE",
-    stack: ["HTML", "CSS", "JavaScript"],
+    name: "UI Design Fitness App",
+    type: "Design UI · Sports & Fitness",
+    status: "Prototype",
+    stack: ["Figma", "Photoshop"],
     description:
       "Web berbasis AI yang membantu mendeteksi dan mengukur tingkat minat belajar terhadap anak-anak, dan dapat memberikan rekomendasi materi pembelajaran yang sesuai dengan minat mereka.",
-    images: [nalarImage, nalartablet, nalarMobile],
-    link: "https://nalar.netlify.app/",
+    images: [FitnessImage, FitnessMockup],
+    link: "https://www.figma.com/design/yscSqEgxlDzcSOQa2J6zS3/Fitness-App?node-id=0-1&t=1KR7daWrarg27Auy-1",
   },
 ];
