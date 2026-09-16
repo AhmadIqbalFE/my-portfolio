@@ -9,6 +9,7 @@ import coffeeProject from "../assets/images/img9.jpg";
 import coffeeMockup from "../assets/images/img10.jpg";
 import FitnessImage from "../assets/images/img11.jpg";
 import FitnessMockup from "../assets/images/img12.jpg";
+import FitnessMobile from "../assets/images/img13.jpg";
 
 export const projects = [
   {
@@ -28,7 +29,7 @@ export const projects = [
     status: "LIVE",
     stack: ["React", "Tailwind CSS"],
     description:
-      "Aplikasi pencatatan keuangan pribadi yang dirancang untuk pola pengeluaran sehari-hari ala Indonesia, dari jajan warung sampai transfer digital.",
+      "CASHin adalah aplikasi mobile yang saya kembangkan berguna untuk pencatatan keuangan yang dirancang untuk mengatur pola pemasukan dan pengeluaran sehari-hari, agar pengguna dapat memantau pemasukan dan pengeluaran mereka dari transaksi sehari hari hingga transfer digital. CASHin memiliki fitur tracking pengeluaran, pengingat tagihan, dan laporan keuangan yang dapat membantu pengguna mengelola keuangan mereka dengan lebih baik. Dengan menggunakan CASHin, pengguna dapat lebih mudah mengatur keuangan mereka dan membuat keputusan finansial yang lebih bijak. Finance app ini menggunakan react untuk bagian frontend dan Tailwind CSS untuk styling, sehingga memberikan pengalaman pengguna yang responsif dan interaktif. Untuk bagian pengelolaan data pengguna disini saya menggunakan supabase untuk pengelolaan database pengguna.",
     images: [amdShopImage, amdMobile, amdTablet],
     link: "https://cashin.vercel.app/",
   },
@@ -39,7 +40,7 @@ export const projects = [
     status: "Prototype",
     stack: ["Figma", "Adobe Illustrator"],
     description:
-      "Sebuah UI design mobile app, yang dirancang untuk memudahkan pelanggan dalam memesan kopi di kedai kopi favorit mereka, dengan fokus pada pengalaman pengguna yang intuitif dan visual yang menarik.",
+      "Sebuah UI design mobile app, yang dirancang untuk memudahkan penikmat kopi dalam memesan kopi di kedai kopi favorit mereka, di desain seminimalis mungkin agar ketika pengguna menggunakan mobile app tersebut mengerti workflow dari sistem aplikasi tersebut. CTA button yang jelas membuat aplikasi ini user friendly dari kalangan muda hingga kalangan tua. Kedepannya saya akan develop design ui yang lebih interaktif dengan system architecture yang lebih baik dari design sebelumnya.",
     images: [coffeeImage, coffeeProject, coffeeMockup],
     link: "https://www.figma.com/design/tJY7V2KoUVPlb1okU6AaDD/Design-Coffee-Shop?node-id=0-1&t=hSH4v13Xz2dDyEOR-1",
   },
@@ -50,7 +51,7 @@ export const projects = [
     status: "LIVE",
     stack: ["HTML", "CSS", "JavaScript"],
     description:
-      "Web berbasis AI yang membantu mendeteksi dan mengukur tingkat minat belajar terhadap anak-anak, dan dapat memberikan rekomendasi materi pembelajaran yang sesuai dengan minat mereka.",
+      "Nalar. adalah Web berbasis AI yang membantu mendeteksi dan mengukur tingkat minat belajar terhadap anak-anak, dan dapat memberikan rekomendasi materi pembelajaran yang sesuai dengan minat mereka. Di web ini kita dapat ",
     images: [nalarImage, nalartablet, nalarMobile],
     link: "https://nalar.netlify.app/",
   },
@@ -62,7 +63,7 @@ export const projects = [
     stack: ["Figma", "Photoshop"],
     description:
       "Web berbasis AI yang membantu mendeteksi dan mengukur tingkat minat belajar terhadap anak-anak, dan dapat memberikan rekomendasi materi pembelajaran yang sesuai dengan minat mereka.",
-    images: [FitnessImage, FitnessMockup],
+    images: [FitnessImage, FitnessMockup, FitnessMobile],
     link: "https://www.figma.com/design/yscSqEgxlDzcSOQa2J6zS3/Fitness-App?node-id=0-1&t=1KR7daWrarg27Auy-1",
   },
 ];

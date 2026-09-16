@@ -894,10 +894,14 @@ section {
   font-size: 14.5px;
   color: var(--muted);
   margin: 0 0 18px;
+  display: -webkit-box;
   text-align: justify;
   hyphens: auto;
   word-spacing: normal;
   letter-spacing: normal;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .project-stack {
@@ -945,10 +949,12 @@ section {
   border-radius: 20px;
   width: 100%;
   max-width: 560px;
-  max-height: 85vh;
+  max-height: 700px;
   overflow-y: auto;
   box-shadow: 0 30px 60px rgba(16, 20, 28, 0.25);
   animation: modalPop 0.25s ease;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 @keyframes modalPop {
@@ -1033,6 +1039,14 @@ section {
   line-height: 1.6;
   color: var(--muted);
   margin: 0 0 20px;
+  text-align: justify;
+  word-spacing: normal;
+  letter-spacing: normal;
+  overflow-y: auto;
+}
+
+.modal-description::-webkit-scrollbar {
+  display: none;
 }
 
 .modal-stack {
