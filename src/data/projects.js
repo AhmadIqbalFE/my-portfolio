@@ -51,7 +51,7 @@ export const projects = [
     status: "LIVE",
     stack: ["HTML", "CSS", "JavaScript"],
     description:
-      "Nalar. adalah Web berbasis AI yang membantu mendeteksi dan mengukur tingkat minat belajar terhadap anak-anak, dan dapat memberikan rekomendasi materi pembelajaran yang sesuai dengan minat mereka. Di web ini kita dapat ",
+      "Nalar. adalah Web berbasis AI yang membantu mendeteksi dan mengukur tingkat minat belajar terhadap anak-anak, dan dapat memberikan rekomendasi materi pembelajaran yang sesuai dengan minat mereka. Di web ini kita dapat melakukan tes yang berguna untuk mengukur tingkat minat belajar anak anak. Dengan adanya hasil score yang dihasilkan saat menjalankan tes tersebut, maka AI akan membuat panduan sampai metode pembelajaran yang cocok dari individu setiap anak. Setiap anak akan mendapatkan metode pembelajaran yang berbeda beda dengan dasar dari hasil score tes dan AI akan mengakumulasikan hasil score tersebut dengan data yang telah dikumpulkan oleh AI tentang berbagai macam metode pembelajaran yang efektif. Web ini merupakan tugas group project yang dikerjakan saat kuliah.",
     images: [nalarImage, nalartablet, nalarMobile],
     link: "https://nalar.netlify.app/",
   },
@@ -60,9 +60,20 @@ export const projects = [
     name: "UI Design Fitness App",
     type: "Design UI · Sports & Fitness",
     status: "Prototype",
-    stack: ["Figma", "Photoshop"],
+    stack: ["Figma", "Photoshop", "React Native"],
     description:
-      "Web berbasis AI yang membantu mendeteksi dan mengukur tingkat minat belajar terhadap anak-anak, dan dapat memberikan rekomendasi materi pembelajaran yang sesuai dengan minat mereka.",
+      "Merupakan model design fitness app yang akan saya bangun kedepannya. Untuk saat ini masih dalam tahap model UI design, fitness app ini akan menampilkan fitur tracking training daily, rekomendasi latihan harian, challenge daily hingga fitur monitoring kalori dan mineral yang dibutuhkan tubuh. Dengan adanya fitur login, homepage, schedule page, training page, dan report page membuat pengalaman pengguna dalam menggunakan aplikasi tersebut terasa nyaman dan interaktif.",
+    images: [FitnessImage, FitnessMockup, FitnessMobile],
+    link: "https://www.figma.com/design/yscSqEgxlDzcSOQa2J6zS3/Fitness-App?node-id=0-1&t=1KR7daWrarg27Auy-1",
+  },
+
+  {
+    name: "Re-modelling UI Design Website Danantara",
+    type: "Design UI · Government Website",
+    status: "Prototype",
+    stack: ["Figma", "Corel Draw"],
+    description:
+      "Merupakan model design fitness app yang akan saya bangun kedepannya. Untuk saat ini masih dalam tahap model UI design, fitness app ini akan menampilkan fitur tracking training daily, rekomendasi latihan harian, challenge daily hingga fitur monitoring kalori dan mineral yang dibutuhkan tubuh. Dengan adanya fitur login, homepage, schedule page, training page, dan report page membuat pengalaman pengguna dalam menggunakan aplikasi tersebut terasa nyaman dan interaktif.",
     images: [FitnessImage, FitnessMockup, FitnessMobile],
     link: "https://www.figma.com/design/yscSqEgxlDzcSOQa2J6zS3/Fitness-App?node-id=0-1&t=1KR7daWrarg27Auy-1",
   },

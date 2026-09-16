@@ -864,12 +864,14 @@ section {
   font-size: 21px;
   font-weight: bold;
   text-align: left;
+  line-height: 1.2;
 }
 
 .project-type {
   font-size: 12px;
   color: var(--muted);
   margin-top: 4px;
+  text-align: left;
 }
 
 .status-pill {
@@ -947,9 +949,13 @@ section {
   position: relative;
   background: var(--paper);
   border-radius: 20px;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
   width: 100%;
   max-width: 560px;
-  max-height: 700px;
+  max-height: 85vh;
+  height: 700px;
   overflow-y: auto;
   box-shadow: 0 30px 60px rgba(16, 20, 28, 0.25);
   animation: modalPop 0.25s ease;
@@ -995,6 +1001,7 @@ section {
   aspect-ratio: 16 / 9;
   background: var(--paper-2);
   overflow: hidden;
+  flex-shrink: 0;
 }
 
 .modal-image img {
@@ -1012,6 +1019,10 @@ section {
 
 .modal-content {
   padding: 28px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 0;
 }
 
 .modal-header {
@@ -1026,6 +1037,8 @@ section {
   font-size: 24px;
   font-weight: 700;
   color: #1a1305;
+  line-height: 1.2;
+  text-align: left;
 }
 
 .modal-type {
@@ -1036,13 +1049,17 @@ section {
 
 .modal-description {
   font-size: 15px;
-  line-height: 1.6;
+  line-height: 1.5;
   color: var(--muted);
   margin: 0 0 20px;
   text-align: justify;
   word-spacing: normal;
   letter-spacing: normal;
+  flex: 1;
+  min-height: 0;
   overflow-y: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 .modal-description::-webkit-scrollbar {
@@ -1483,7 +1500,6 @@ footer {
     padding: 20px;
   }
   .modal-description {
-    max-height: 150px;
     overflow-y: auto;
     -ms-overflow-style: none;
     scrollbar-width: none;
@@ -1511,5 +1527,11 @@ footer {
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
     overflow: hidden;
+  }
+}
+
+@media (max-width: 393px) {
+  .modal-type {
+    margin-top: 25px;
   }
 }
