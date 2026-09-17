@@ -10,6 +10,9 @@ import coffeeMockup from "../assets/images/img10.jpg";
 import FitnessImage from "../assets/images/img11.jpg";
 import FitnessMockup from "../assets/images/img12.jpg";
 import FitnessMobile from "../assets/images/img13.jpg";
+import Dirganmock from "../assets/images/img14.jpg";
+import DirganUI from "../assets/images/img15.jpg";
+import DirganDesign from "../assets/images/img16.jpg";
 
 export const projects = [
   {
@@ -68,13 +71,13 @@ export const projects = [
   },
 
   {
-    name: "Re-modelling UI Design Website Danantara",
+    name: "Re-modelling UI Design Website Dirgantara",
     type: "Design UI · Government Website",
     status: "Prototype",
     stack: ["Figma", "Corel Draw"],
     description:
-      "Merupakan model design fitness app yang akan saya bangun kedepannya. Untuk saat ini masih dalam tahap model UI design, fitness app ini akan menampilkan fitur tracking training daily, rekomendasi latihan harian, challenge daily hingga fitur monitoring kalori dan mineral yang dibutuhkan tubuh. Dengan adanya fitur login, homepage, schedule page, training page, dan report page membuat pengalaman pengguna dalam menggunakan aplikasi tersebut terasa nyaman dan interaktif.",
-    images: [FitnessImage, FitnessMockup, FitnessMobile],
-    link: "https://www.figma.com/design/yscSqEgxlDzcSOQa2J6zS3/Fitness-App?node-id=0-1&t=1KR7daWrarg27Auy-1",
+      "Merupakan hasil re-design dari website dirgantara, yang dimana saya re-modelling seperti navigation bar, layout modal box content, hingga warna dan font yang digunakan dalam website dirgantara, yang bertujuan agar pengunjung website lebih mengerti dan paham apa yang disampaikan dalam website tersebut dengan peletakan CTA button yang jelas dan optimal. Re-design ini merupakan tes ketika melamar intern UI/UX Designer di suatu perusahaan, yaitu salah satu tes nya adalah re-design website dan saya memutuskan untuk mengambil website dirgantara sebagai website yang akan re-design. Di website sebelumnya navigation bar yang kurang jelas, layout images hingga box container yang masig berantakan dan CTA button yang masih kurang jelas menjadi salah satu alasan saya untuk memilih website dirgantara menjadi objek UI redesign saya.",
+    images: [Dirganmock, DirganUI, DirganDesign],
+    link: "https://www.figma.com/design/waMux9RfgS2ADPE1dUI64h/Redesign-PT-Dirgantara-Indonesia?node-id=0-1&t=4OjrQqYk3SlzZiJS-1",
   },
 ];
