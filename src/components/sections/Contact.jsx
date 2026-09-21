@@ -12,12 +12,6 @@ import Reveal from "../common/Reveal";
 import Eyebrow from "../common/Eyebrow";
 
 function Contact() {
-  const email = "[email protected]";
-
-  const sendEmail = () => {
-    window.location.href = `mailto:${email}`;
-  };
-
   return (
     <section id="kontak" className="section-pad">
       <div className="wrap contact-wrapper">
@@ -37,8 +31,10 @@ function Contact() {
 
             <div className="contact-grid">
               <a
-                href="mailto:a.iqbal27112005@gmail.com"
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=a.iqbal27112005@gmail.com"
                 className="contact-link"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <Mail size={17} />
                 Email
@@ -94,16 +90,6 @@ function Contact() {
                 GitHub
               </a>
             </div>
-
-            <button
-              className="btn-primary contact-button"
-              onClick={() => {
-                window.location.href = "mailto:a.iqbal27112005@gmail.com";
-              }}
-            >
-              Kirim Email
-              <Send size={15} />
-            </button>
           </div>
         </Reveal>
       </div>
