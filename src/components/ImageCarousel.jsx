@@ -12,7 +12,7 @@ function ImageCarousel({ images }) {
     setCurrentIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
   };
 
-  const hasMultiple = images.length > 1; // tambahan
+  const hasMultiple = images.length > 1;
 
   return (
     <div className="image-carousel">

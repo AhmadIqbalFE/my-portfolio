@@ -6,6 +6,10 @@ import carousel2 from "../../assets/images/img2.png";
 import carousel3 from "../../assets/images/img3.png";
 import carousel4 from "../../assets/images/img4.jpg";
 import carousel5 from "../../assets/images/img7.jpg";
+import carousel6 from "../../assets/images/img9.jpg";
+import carousel7 from "../../assets/images/img10.jpg";
+import carousel8 from "../../assets/images/img13.jpg";
+import carousel9 from "../../assets/images/img16.jpg";
 import ImageCarousel from "../ImageCarousel";
 
 function About() {
@@ -25,6 +29,10 @@ function About() {
                     carousel3,
                     carousel4,
                     carousel5,
+                    carousel6,
+                    carousel7,
+                    carousel8,
+                    carousel9,
                   ]}
                 />
               </div>
