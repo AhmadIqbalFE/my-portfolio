@@ -14,6 +14,13 @@ function Hero() {
     }
   };
 
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = "/files/CV_Ahmad_Iqbal_ATS.pdf";
+    link.download = "CV_Ahmad_Iqbal_ATS.pdf";
+    link.click();
+  };
+
   return (
     <section id="top" className="hero">
       <div className="hero-grid" />
@@ -47,8 +54,8 @@ function Hero() {
                 <ArrowUpRight size={16} />
               </button>
 
-              <button className="btn-ghost" onClick={() => scrollTo("kontak")}>
-                Hubungi Saya
+              <button className="btn-download" onClick={handleDownload}>
+                Download CV
               </button>
             </div>
           </div>
