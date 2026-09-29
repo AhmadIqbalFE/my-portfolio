@@ -698,9 +698,10 @@ section {
 }
 
 .resume-timeline {
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  width: 100%;
+  max-width: 420px;
   margin-bottom: 25px;
 }
 
@@ -708,6 +709,7 @@ section {
 .resume-heading-title {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 12px;
   margin-bottom: 25px;
 }
@@ -730,21 +732,21 @@ section {
 .resume-item {
   position: relative;
   display: flex;
-  align-items: center;
-  gap: 10px;
-  padding-bottom: 20px;
+  align-items: flex-start;
+  gap: 14px;
+  padding-bottom: 28px;
 }
 
 .resume-item:last-child {
   padding-bottom: 0;
 }
 
+/* Vertical line */
 .resume-item:not(:last-child)::before {
   content: "";
   position: absolute;
   left: 5.5px;
-  transform: translateX(-50%);
-  top: 50%;
+  top: 11px;
   bottom: 0;
   width: 1px;
   background: var(--line);
@@ -757,6 +759,7 @@ section {
   width: 11px;
   height: 11px;
   flex-shrink: 0;
+  margin-top: 4px;
   border-radius: 50%;
   background: var(--gold);
   box-shadow: 0 0 0 4px rgba(216, 166, 62, 0.12);
@@ -765,7 +768,7 @@ section {
 
 /* Text */
 .resume-item-content {
-  flex: 0 1 auto;
+  flex: 1;
   display: flex;
   flex-direction: column;
   gap: 4px;

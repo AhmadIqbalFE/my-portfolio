@@ -9,11 +9,11 @@ function Resume() {
       <section id="resume" className="section-pad">
         <Eyebrow>Resume</Eyebrow>
         <div className="wrap resume-container">
-          <Reveal>
+          <Reveal delay={100}>
             <div className="resume-block">
               <div className="resume-heading-title">
-                <FaGraduationCap size={20} className="resume-icon" />
-                <h2 className="font-display resume-title">Education</h2>
+                <FaBriefcase size={20} className="resume-icon" />
+                <h2 className="font-display resume-title">Experience</h2>
               </div>
 
               <div className="resume-timeline">
@@ -26,9 +26,7 @@ function Resume() {
                     <p className="description-list">Science (2021 - 2024)</p>
                   </div>
                 </div>
-              </div>
 
-              <div className="resume-timeline">
                 <div className="resume-item">
                   <span className="resume-dot"></span>
                   <div className="resume-item-content">
@@ -36,7 +34,7 @@ function Resume() {
                       Universitas Djuanda
                     </h2>
                     <p className="description-list">
-                      Computer Science (2025 - now)
+                      Computer Science (2025 - Now)
                     </p>
                   </div>
                 </div>
@@ -51,22 +49,33 @@ function Resume() {
                 <h2 className="font-display resume-title">Experience</h2>
               </div>
 
-              <div className="resume-item">
-                <span className="resume-dot"></span>
-                <div className="resume-item-content">
-                  <h2 className="font-display resume-list">
-                    Supervisor Dormitory (2025 - now)
-                  </h2>
-                  <p className="description-list">
-                    at SMP SMA Cahaya Rancamaya Islamic Boarding School.
-                  </p>
+              <div className="resume-timeline">
+                <div className="resume-item">
+                  <span className="resume-dot"></span>
+                  <div className="resume-item-content">
+                    <h2 className="font-display resume-list">
+                      Supervisor Dormitory (2025 - now)
+                    </h2>
+                    <p className="description-list">
+                      at SMP SMA Cahaya Rancamaya Islamic Boarding School.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="resume-item">
+                  <span className="resume-dot"></span>
+                  <div className="resume-item-content">
+                    <h2 className="font-display resume-list">
+                      National Leadership Students (2024)
+                    </h2>
+                    <p className="description-list">Nanggroe Aceh Darussalam</p>
+                  </div>
                 </div>
               </div>
             </div>
           </Reveal>
         </div>
       </section>
-
       <div className="wrap">
         <div className="divider" />
       </div>
