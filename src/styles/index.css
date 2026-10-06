@@ -8,7 +8,7 @@
   --ink-text: #12151c;
   --muted: #5b6472;
   --muted-light: #8991a0;
-  --gold: #d8a63e;
+  --gold: rgba(216, 166, 62);
   --teal: #1f6f6b;
   --line: rgba(18, 21, 28, 0.12);
   --line-dark: rgba(255, 255, 255, 0.14);
@@ -683,6 +683,18 @@ section {
 }
 
 /* Resume */
+#resume {
+  background-color: #eef0f4;
+
+  background-image: linear-gradient(
+      rgba(16, 20, 28, 0.025) 1px,
+      transparent 1px
+    ),
+    linear-gradient(90deg, rgba(16, 20, 28, 0.025) 1px, transparent 1px);
+
+  background-size: 40px 40px;
+}
+
 .resume-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1075,6 +1087,19 @@ section {
 
 .modal-link {
   width: 100%;
+}
+
+/* Experience */
+#experience {
+  background-color: rgba(var(--gold), 0.2);
+
+  background-image: linear-gradient(
+      rgba(16, 20, 28, 0.025) 1px,
+      transparent 1px
+    ),
+    linear-gradient(90deg, rgba(16, 20, 28, 0.025) 1px, transparent 1px);
+
+  background-size: 40px 40px;
 }
 
 /* Skills */

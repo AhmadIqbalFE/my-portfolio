@@ -12,6 +12,10 @@ export const navigation = [
     label: "Projects",
   },
   {
+    id: "experience",
+    label: "Experience",
+  },
+  {
     id: "keahlian",
     label: "Skill",
   },
