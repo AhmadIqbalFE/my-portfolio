@@ -12,8 +12,8 @@ function Resume() {
           <Reveal delay={100}>
             <div className="resume-block">
               <div className="resume-heading-title">
-                <FaBriefcase size={20} className="resume-icon" />
-                <h2 className="font-display resume-title">Experience</h2>
+                <FaGraduationCap size={20} className="resume-icon" />
+                <h2 className="font-display resume-title">Education</h2>
               </div>
 
               <div className="resume-timeline">
