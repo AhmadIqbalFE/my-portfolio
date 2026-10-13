@@ -41,7 +41,7 @@ function Hero() {
             <p className="hero-description">
               Saya Ahmad Iqbal, mahasiswa Ilmu Komputer di Universitas Djuanda.
               Saya memiliki keahlian di Frontend & Backend Developer sekaligus
-              UI/UX Designer.Fokus mempelajari fundamental sebagai seorang
+              UI/UX Designer. Fokus mempelajari fundamental sebagai seorang
               Software Engineer.
             </p>
 

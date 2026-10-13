@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import { navigation } from "../../data/navigation";
+import weblogo from "../../assets/images/navbarlogo.png";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -34,13 +35,16 @@ function Navbar() {
   return (
     <nav className={`nav ${scrolled ? "scrolled" : ""}`}>
       <div className="wrap navbar-container">
-        <button
-          onClick={() => scrollTo("top")}
-          className="font-display navbar-logo"
-        >
-          Ahmad
-          <span>.</span>
-        </button>
+        <div className="web-logo-brand">
+          <img src={weblogo} alt="Logo" className="bar-logo" />
+          <button
+            onClick={() => scrollTo("top")}
+            className="font-display navbar-logo"
+          >
+            Ahmad
+            <span>.</span>
+          </button>
+        </div>
 
         <div className="nav-desktop">
           {navigation.map((item) => (

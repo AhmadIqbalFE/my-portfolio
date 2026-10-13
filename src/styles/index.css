@@ -8,7 +8,7 @@
   --ink-text: #12151c;
   --muted: #5b6472;
   --muted-light: #8991a0;
-  --gold: rgba(216, 166, 62);
+  --gold: #d8a63e;
   --teal: #1f6f6b;
   --line: rgba(18, 21, 28, 0.12);
   --line-dark: rgba(255, 255, 255, 0.14);
@@ -209,6 +209,17 @@ section {
 }
 
 /* Navbar */
+.web-logo-brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.bar-logo {
+  width: 28px;
+  height: 28px;
+  display: flex;
+}
 .nav {
   position: fixed;
   top: 0;
@@ -1091,8 +1102,7 @@ section {
 
 /* Experience */
 #experience {
-  background-color: rgba(var(--gold), 0.2);
-
+  background-color: color-mix(in srgb, var(--gold) 30%, transparent);
   background-image: linear-gradient(
       rgba(16, 20, 28, 0.025) 1px,
       transparent 1px
@@ -1100,6 +1110,128 @@ section {
     linear-gradient(90deg, rgba(16, 20, 28, 0.025) 1px, transparent 1px);
 
   background-size: 40px 40px;
+}
+
+.experience-bg {
+  background-image: linear-gradient(var(--line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--line) 1px, transparent 1px);
+  background-size: 36px 36px;
+}
+
+.experience-title {
+  margin-bottom: 40px;
+  color: #1a1305;
+}
+
+.experience-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.experience-card {
+  position: relative;
+  background: #f7f8fa;
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  padding: 0;
+  cursor: pointer;
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.experience-preview {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  background: var(--paper-2);
+}
+
+.experience-preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.experience-card:hover .experience-preview img {
+  transform: scale(1.05);
+}
+
+.experience-preview-placeholder {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, var(--paper-2), var(--line));
+}
+
+.experience-body {
+  padding: 24px 28px 28px;
+}
+
+.experience-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 32px rgba(16, 20, 28, 0.08);
+  border-color: rgba(18, 21, 28, 0.22);
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 14px;
+  gap: 12px;
+}
+
+.experience-name {
+  font-size: 21px;
+  font-weight: bold;
+  text-align: left;
+  line-height: 1.2;
+}
+
+.experience-type {
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 4px;
+  text-align: left;
+}
+
+.status-progress {
+  color: #a16a1f;
+  background: rgba(161, 106, 31, 0.1);
+}
+
+.experience-description {
+  font-size: 14.5px;
+  color: var(--muted);
+  margin: 0 0 18px;
+  display: -webkit-box;
+  text-align: justify;
+  hyphens: auto;
+  word-spacing: normal;
+  letter-spacing: normal;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.experience-stack {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.tag {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 11.5px;
+  color: var(--muted);
+  background: rgba(239, 175, 37, 0.73);
+  border: 1px solid var(--muted-light);
+  border-radius: 4px;
+  padding: 3px 8px;
 }
 
 /* Skills */
@@ -1452,6 +1584,10 @@ footer {
 
 @media (max-width: 800px) {
   .about-container {
+    grid-template-columns: 1fr;
+  }
+
+  .experience-grid {
     grid-template-columns: 1fr;
   }
 
