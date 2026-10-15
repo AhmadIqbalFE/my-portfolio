@@ -16,37 +16,34 @@ function ExperienceModal({ experience, onClose }) {
   if (!experience) return null;
 
   return (
-    <div className="modal-overlay" onClick={onClose}>
-      <div className="modal-box" onClick={(e) => e.stopPropagation()}>
-        <button className="modal-close" onClick={onClose} aria-label="Close">
+    <div className="modal-exp-overlay" onClick={onClose}>
+      <div className="modal-exp-box" onClick={(e) => e.stopPropagation()}>
+        <button
+          className="modal-exp-close"
+          onClick={onClose}
+          aria-label="Close"
+        >
           <X size={18} />
         </button>
 
-        <div className="modal-image">
+        <div className="modal-exp-image">
           {experience.images && experience.images.length > 0 ? (
             <ImageCarousel images={experience.images} />
           ) : (
-            <div className="modal-image-placeholder" />
+            <div className="modal-exp-image-placeholder" />
           )}
         </div>
 
-        <div className="modal-content">
-          <div className="modal-header">
-            <h3 className="font-display modal-name">{experience.name}</h3>
-            <span
-              className={`status-pill ${
-                experience.status === "LIVE" ? "status-live" : "status-progress"
-              }`}
-            >
-              {experience.status}
-            </span>
+        <div className="modal-exp-content">
+          <div className="modal-exp-header">
+            <h3 className="font-display modal-exp-name">{experience.name}</h3>
           </div>
 
-          <p className="modal-type">{experience.type}</p>
-          <p className="modal-description">{experience.description}</p>
+          <p className="modal-exp-type">{experience.location}</p>
+          <p className="modal-exp-description">{experience.description}</p>
 
-          <div className="experience-stack modal-stack">
-            {experience.stack.map((tech) => (
+          <div className="experience-location modal-exp-location">
+            {experience.location.map((tech) => (
               <span key={tech} className="tag">
                 {tech}
               </span>
@@ -58,7 +55,7 @@ function ExperienceModal({ experience, onClose }) {
               href={experience.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-primary modal-link"
+              className="btn-primary modal-exp-link"
             >
               Lihat Project <ExternalLink size={15} />
             </a>

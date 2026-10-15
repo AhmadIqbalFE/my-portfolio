@@ -29,14 +29,13 @@ function ExperienceCard({ experience, index, onClick }) {
               <h3 className="font-display experience-name">
                 {experience.name}
               </h3>
-              <p className="font-mono experience-type">{experience.type}</p>
             </div>
           </div>
 
           <p className="experience-description">{experience.description}</p>
 
-          <div className="experience-stack">
-            {experience.stack.map((technology) => (
+          <div className="experience-location">
+            {experience.location.map((technology) => (
               <span key={technology} className="tag">
                 {technology}
               </span>
