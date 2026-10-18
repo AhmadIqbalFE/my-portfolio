@@ -1,0 +1,15 @@
+{
+  "hero": {
+    "badge": "Terbuka untuk berdiskusi",
+    "title": "Full-stack Developer, UI/UX Designer & Software Engineer",
+    "description": "Saya {{name}}, mahasiswa Ilmu Komputer di Universitas Djuanda. Saya memiliki keahlian di Frontend & Backend Developer sekaligus UI/UX Designer. Fokus mempelajari fundamental sebagai seorang Software Engineer.",
+    "viewProjects": "Lihat Proyek",
+    "downloadCv": "Download CV",
+    "photoAlt": "Foto {{name}}",
+    "profileTag": "PROFIL",
+    "role": "Software Engineer",
+    "meta": {
+      "developer": "Developer"
+    }
+  }
+}

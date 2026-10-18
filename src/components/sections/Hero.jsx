@@ -1,8 +1,10 @@
 import { ArrowUpRight } from "lucide-react";
 import Reveal from "../common/Reveal";
 import profilePhoto from "../../assets/profile-photo.jpeg";
+import { useLanguage } from "../../i18n/LanguageContext";
 
 function Hero() {
+  const { t } = useLanguage();
   const scrollTo = (id) => {
     const element = document.getElementById(id);
 
@@ -31,7 +33,7 @@ function Hero() {
           <div>
             <span className="badge">
               <span className="badge-dot" />
-              Terbuka untuk berdikusi
+              {t("hero.badge")}
             </span>
 
             <h1 className="font-display hero-title">

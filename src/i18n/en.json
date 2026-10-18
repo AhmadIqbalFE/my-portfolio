@@ -1,0 +1,15 @@
+{
+  "hero": {
+    "badge": "Open to discussions",
+    "title": "Full-stack Developer, UI/UX Designer & Software Engineer",
+    "description": "I'm {{name}}, a Computer Science student at Universitas Djuanda. I have expertise in Frontend & Backend Development as well as UI/UX Design. I focus on learning the fundamentals of becoming a Software Engineer.",
+    "viewProjects": "View Projects",
+    "downloadCv": "Download CV",
+    "photoAlt": "Photo of {{name}}",
+    "profileTag": "PROFILE",
+    "role": "Software Engineer",
+    "meta": {
+      "developer": "Developer"
+    }
+  }
+}

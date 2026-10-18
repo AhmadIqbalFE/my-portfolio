@@ -79,6 +79,26 @@ section {
   background: var(--line);
 }
 
+/* Language Switcher */
+.lang-switcher {
+  display: inline-flex;
+  border: 1px solid #ccc;
+  border-radius: 999px;
+  overflow: hidden;
+  font-color: var(--muted);
+}
+.lang-switcher button {
+  padding: 3px 10px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+.lang-switcher button.active {
+  background: var(--gold);
+  color: #fff;
+}
+
 /* Eyebrow */
 .eyebrow {
   font-family: "JetBrains Mono", monospace;

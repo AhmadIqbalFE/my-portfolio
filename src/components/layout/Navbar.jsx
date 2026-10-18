@@ -2,10 +2,12 @@ import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import { navigation } from "../../data/navigation";
 import weblogo from "../../assets/images/navbarlogo.png";
+import { useLanguage } from "../../i18n/LanguageContext";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const { lang, setLang } = useLanguage();
 
   useEffect(() => {
     const onScroll = () => {
@@ -56,6 +58,21 @@ function Navbar() {
               {item.label}
             </button>
           ))}
+        </div>
+
+        <div className="lang-switcher">
+          <button
+            className={lang === "id" ? "active" : ""}
+            onClick={() => setLang("id")}
+          >
+            ID
+          </button>
+          <button
+            className={lang === "en" ? "active" : ""}
+            onClick={() => setLang("en")}
+          >
+            EN
+          </button>
         </div>
 
         <button
