@@ -2,18 +2,22 @@ import { MapPin } from "lucide-react";
 import Reveal from "../common/Reveal";
 import Eyebrow from "../common/Eyebrow";
 import { FaGraduationCap, FaBriefcase } from "react-icons/fa";
+import { useLanguage } from "../../i18n/LanguageContext";
 
 function Resume() {
+  const { t } = useLanguage();
   return (
     <>
       <section id="resume" className="section-pad">
-        <Eyebrow>Resume</Eyebrow>
+        <Eyebrow>{t("resume.eyebrowresume")}</Eyebrow>
         <div className="wrap resume-container">
           <Reveal delay={100}>
             <div className="resume-block">
               <div className="resume-heading-title">
                 <FaGraduationCap size={20} className="resume-icon" />
-                <h2 className="font-display resume-title">Education</h2>
+                <h2 className="font-display resume-title">
+                  {t("resume.title1")}
+                </h2>
               </div>
 
               <div className="resume-timeline">
@@ -21,9 +25,11 @@ function Resume() {
                   <span className="resume-dot"></span>
                   <div className="resume-item-content">
                     <h2 className="font-display resume-list">
-                      SMA Negeri Tugumulyo
+                      {t("resume.list1")}
                     </h2>
-                    <p className="description-list">Science (2021 - 2024)</p>
+                    <p className="description-list">
+                      {t("resume.description1")}
+                    </p>
                   </div>
                 </div>
 
@@ -31,10 +37,10 @@ function Resume() {
                   <span className="resume-dot"></span>
                   <div className="resume-item-content">
                     <h2 className="font-display resume-list">
-                      Universitas Djuanda
+                      {t("resume.list2")}
                     </h2>
                     <p className="description-list">
-                      Computer Science (2025 - Now)
+                      {t("resume.description2")}
                     </p>
                   </div>
                 </div>
@@ -46,7 +52,9 @@ function Resume() {
             <div className="resume-block">
               <div className="resume-heading-title">
                 <FaBriefcase size={20} className="resume-icon" />
-                <h2 className="font-display resume-title">Experience</h2>
+                <h2 className="font-display resume-title">
+                  {t("resume.title2")}
+                </h2>
               </div>
 
               <div className="resume-timeline">
@@ -54,10 +62,10 @@ function Resume() {
                   <span className="resume-dot"></span>
                   <div className="resume-item-content">
                     <h2 className="font-display resume-list">
-                      Supervisor Dormitory (2025 - now)
+                      {t("resume.list3")}
                     </h2>
                     <p className="description-list">
-                      at SMP SMA Cahaya Rancamaya Islamic Boarding School.
+                      {t("resume.description3")}
                     </p>
                   </div>
                 </div>
@@ -66,9 +74,11 @@ function Resume() {
                   <span className="resume-dot"></span>
                   <div className="resume-item-content">
                     <h2 className="font-display resume-list">
-                      National Leadership Students (2024)
+                      {t("resume.list4")}
                     </h2>
-                    <p className="description-list">Nanggroe Aceh Darussalam</p>
+                    <p className="description-list">
+                      {t("resume.description4")}
+                    </p>
                   </div>
                 </div>
               </div>

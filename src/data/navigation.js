@@ -1,26 +1,28 @@
+import { useLanguage } from "../i18n/LanguageContext";
+
 export const navigation = [
   {
     id: "tentang",
-    label: "About",
+    labelKey: "nav.about",
   },
   {
     id: "resume",
-    label: "Resume",
+    labelKey: "nav.resume",
   },
   {
     id: "proyek",
-    label: "Projects",
+    labelKey: "nav.projects",
   },
   {
     id: "experience",
-    label: "Experience",
+    labelKey: "nav.experience",
   },
   {
     id: "keahlian",
-    label: "Skill",
+    labelKey: "nav.skill",
   },
   {
     id: "kontak",
-    label: "Contact",
+    labelKey: "nav.contact",
   },
 ];

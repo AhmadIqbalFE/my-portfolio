@@ -5,6 +5,7 @@ import weblogo from "../../assets/images/navbarlogo.png";
 import { useLanguage } from "../../i18n/LanguageContext";
 
 function Navbar() {
+  const { t } = useLanguage();
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const { lang, setLang } = useLanguage();
@@ -55,7 +56,7 @@ function Navbar() {
               className="nav-link"
               onClick={() => scrollTo(item.id)}
             >
-              {item.label}
+              {t(item.labelKey)}
             </button>
           ))}
         </div>
@@ -79,7 +80,9 @@ function Navbar() {
           className="btn-desktop navbar-contact-button"
           onClick={() => scrollTo("kontak")}
         >
-          <span className="btn-primary navbar-contact-inner">Hubungi Saya</span>
+          <span className="btn-primary navbar-contact-inner">
+            {t("nav.buttoncontact")}
+          </span>
         </button>
 
         <button
@@ -99,7 +102,7 @@ function Navbar() {
               onClick={() => scrollTo(item.id)}
               className="mobile-nav-link"
             >
-              {item.label}
+              {t(item.labelKey)}
             </button>
           ))}
         </div>

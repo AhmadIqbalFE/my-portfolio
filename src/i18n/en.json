@@ -2,7 +2,7 @@
   "hero": {
     "badge": "Open to discussions",
     "title": "Full-stack Developer, UI/UX Designer & Software Engineer",
-    "description": "I'm {{name}}, a Computer Science student at Universitas Djuanda. I have expertise in Frontend & Backend Development as well as UI/UX Design. I focus on learning the fundamentals of becoming a Software Engineer.",
+    "description": "I'm Ahmad Iqbal, a Computer Science student at Universitas Djuanda. I have expertise in Frontend & Backend Development as well as UI/UX Design. I focus on learning the fundamentals of becoming a Software Engineer.",
     "viewProjects": "View Projects",
     "downloadCv": "Download CV",
     "photoAlt": "Photo of {{name}}",
@@ -11,5 +11,42 @@
     "meta": {
       "developer": "Developer"
     }
+  },
+
+  "nav": {
+    "home": "Home",
+    "resume": "Resume",
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact",
+    "experience": "Experience",
+    "skill": "Skill",
+    "buttoncontact": "Contact Me"
+  },
+  "about": {
+    "eyebrowabout": "About",
+    "text1": "I have a been interest in exploring the world of IT, including software engineering, web development, and UI/UX design. I have learned various aspects such as user interface architecture, design systems, analytical systems, and API integration. I have also worked on personal projects and academic assignments, both independently and collaboratively with peers.",
+    "text2": "Most of my projects utilize JavaScript and frameworks such as React, React Native, Node.js, and Flutter for mobile app development. Additionally, I have a solid understanding of backend processes in web and mobile app development, including database design and API development.",
+    "text3": "Currently, I am pursuing a degree in Computer Science at Universitas Djuanda while building my portfolio through various projects and experiences. This preparation has equipped me to embark on a career in the IT industry.",
+    "location": "Indonesia · West Java"
+  },
+
+  "resume": {
+    "eyebrowresume": "Resume",
+    "title1": "Education",
+    "title2": "Experience",
+    "description1": "MIPA (2021 - 2024)",
+    "description2": "Computer Science (2025 - Present)",
+    "list1": "SMA Negeri Tugumulyo",
+    "list2": "Universitas Djuanda",
+    "description3": "SMP SMA Cahaya Rancamaya Islamic Boarding School.",
+    "description4": "Nanggroe Aceh Darussalam",
+    "list3": "Dormitory Supervisor (2025 - Present)",
+    "list4": "National Leadership Students (2024)"
+  },
+
+  "projects": {
+    "eyebrowprojects": "Projects",
+    "title": "Development & UI Design"
   }
 }

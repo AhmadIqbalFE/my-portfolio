@@ -36,28 +36,21 @@ function Hero() {
               {t("hero.badge")}
             </span>
 
-            <h1 className="font-display hero-title">
-              Full-stack Developer UI/UX Designer Software Engineer
-            </h1>
+            <h1 className="font-display hero-title">{t("hero.title")}</h1>
 
-            <p className="hero-description">
-              Saya Ahmad Iqbal, mahasiswa Ilmu Komputer di Universitas Djuanda.
-              Saya memiliki keahlian di Frontend & Backend Developer sekaligus
-              UI/UX Designer. Fokus mempelajari fundamental sebagai seorang
-              Software Engineer.
-            </p>
+            <p className="hero-description">{t("hero.description")}</p>
 
             <div className="hero-buttons">
               <button
                 className="btn-primary"
                 onClick={() => scrollTo("proyek")}
               >
-                Lihat Proyek
+                {t("hero.viewProjects")}
                 <ArrowUpRight size={16} />
               </button>
 
               <button className="btn-download" onClick={handleDownload}>
-                Download CV
+                {t("hero.downloadCv")}
               </button>
             </div>
           </div>

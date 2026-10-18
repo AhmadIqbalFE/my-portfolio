@@ -2,14 +2,52 @@
   "hero": {
     "badge": "Terbuka untuk berdiskusi",
     "title": "Full-stack Developer, UI/UX Designer & Software Engineer",
-    "description": "Saya {{name}}, mahasiswa Ilmu Komputer di Universitas Djuanda. Saya memiliki keahlian di Frontend & Backend Developer sekaligus UI/UX Designer. Fokus mempelajari fundamental sebagai seorang Software Engineer.",
+    "description": "Saya Ahmad Iqbal, mahasiswa Ilmu Komputer di Universitas Djuanda. Saya memiliki keahlian di Frontend & Backend Developer sekaligus UI/UX Designer. Fokus mempelajari fundamental sebagai seorang Software Engineer.",
     "viewProjects": "Lihat Proyek",
-    "downloadCv": "Download CV",
+    "downloadCv": "Unduh CV",
     "photoAlt": "Foto {{name}}",
     "profileTag": "PROFIL",
     "role": "Software Engineer",
     "meta": {
       "developer": "Developer"
     }
+  },
+
+  "nav": {
+    "home": "Beranda",
+    "resume": "Ringkasan",
+    "about": "Tentang",
+    "projects": "Proyek",
+    "contact": "Kontak",
+    "experience": "Pengalaman",
+    "skill": "Keahlian",
+    "buttoncontact": "Hubungi Saya"
+  },
+
+  "about": {
+    "eyebrowabout": "Tentang",
+    "text1": "Saya mempunyai ketertarikan dalam mempelajari dunia IT, seperti software engineering, web development hingga UI/UX design. Banyak hal yang saya pelajari architecture user interface, design system, analytical system hingga integrasi API. Saya juga memiliki project pribadi ataupun tugas selama kuliah yang saya kerjakan sendiri maupun berkolaborasi dengan teman-teman.",
+    "text2": "Project yang kebanyakan banyak menggunakan javascript maupun framework seperti, react, react native, node.js hingga flutter untuk pengembangan mobile app, selain itu saya juga cukup memahami alur backend dalam sebuah pengembangan web hingga mobile app seperti,perancangan database hingga merancang API",
+    "text3": " Saat ini saya menempuh studi Ilmu Komputer di Universitas Djuanda sambil membangun portfolio saya dengan project-project yang telah dibuat maupun pengalaman yang pernah saya dapatkan, dengan itu saya telah mempersiapkan diri untuk mulai berkarir di dunia IT.",
+    "location": "Indonesia · Jawa Barat"
+  },
+
+  "resume": {
+    "eyebrowresume": "Ringkasan",
+    "title1": "Pendidikan",
+    "title2": "Pengalaman",
+    "description1": "MIPA (2021 - 2024)",
+    "description2": "Ilmu Komputer (2025 - Sekarang)",
+    "list1": "SMA Negeri Tugumulyo",
+    "list2": "Universitas Djuanda",
+    "description3": "SMP SMA Cahaya Rancamaya Islamic Boarding School.",
+    "description4": "Nanggroe Aceh Darussalam",
+    "list3": "Pembina Asrama (2025 - Sekarang)",
+    "list4": "National Leadership Students (2024)"
+  },
+
+  "projects": {
+    "eyebrowprojects": "Proyek",
+    "title": "Pengembangan & Desain UI"
   }
 }

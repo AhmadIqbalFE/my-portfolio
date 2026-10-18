@@ -4,17 +4,21 @@ import ProjectCard from "../cards/ProjectCard";
 import ProjectModal from "../cards/ProjectModal";
 import { projects } from "../../data/projects";
 import Eyebrow from "../common/Eyebrow";
+import { useLanguage } from "../../i18n/LanguageContext";
 
 function Projects() {
+  const { t } = useLanguage();
   const [activeProject, setActiveProject] = useState(null);
 
   return (
     <section id="proyek" className="section-pad projects-bg">
       <div className="wrap">
         <Reveal>
-          <Eyebrow className="project-tagline">Projects</Eyebrow>
+          <Eyebrow className="project-tagline">
+            {t("projects.eyebrowprojects")}
+          </Eyebrow>
           <h2 className="font-display section-title projects-title">
-            Development & UI Design
+            {t("projects.title")}
           </h2>
         </Reveal>
 
