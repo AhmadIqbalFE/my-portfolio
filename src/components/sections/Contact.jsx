@@ -1,5 +1,4 @@
 import { Mail, Send } from "lucide-react";
-
 import {
   FaDiscord,
   FaGithub,
@@ -7,27 +6,23 @@ import {
   FaLinkedin,
   FaWhatsapp,
 } from "react-icons/fa";
-
 import Reveal from "../common/Reveal";
 import Eyebrow from "../common/Eyebrow";
+import { useLanguage } from "../../i18n/LanguageContext";
 
 function Contact() {
+  const { t } = useLanguage();
+
   return (
     <section id="kontak" className="section-pad">
       <div className="wrap contact-wrapper">
         <Reveal>
           <div className="contact-card">
-            <Eyebrow>Contact & Social Media</Eyebrow>
+            <Eyebrow>{t("contact.eyebrowcontact")}</Eyebrow>
 
-            <h2 className="font-display contact-title">
-              You have a project? Lets talk it.
-            </h2>
+            <h2 className="font-display contact-title">{t("contact.title")}</h2>
 
-            <p className="contact-description">
-              Terbuka untuk proyek freelance, kolaborasi, atau sekadar ngobrol
-              soal produk digital. Silakan hubungi lewat salah satu channel saya
-              di bawah.
-            </p>
+            <p className="contact-description">{t("contact.description")}</p>
 
             <div className="contact-grid">
               <a

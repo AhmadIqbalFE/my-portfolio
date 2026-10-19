@@ -2,16 +2,18 @@ import Reveal from "../common/Reveal";
 import Eyebrow from "../common/Eyebrow";
 import SkillCard from "../cards/SkillCard";
 import { skills } from "../../data/skills";
+import { useLanguage } from "../../i18n/LanguageContext";
 
 function Skills() {
+  const { t } = useLanguage();
   return (
     <section id="keahlian" className="section-pad skills-section">
       <div className="wrap">
         <Reveal>
-          <Eyebrow>Skills</Eyebrow>
+          <Eyebrow>{t("skills.eyebrowskill")}</Eyebrow>
 
           <h2 className="font-display section-title skills-title">
-            Toolkit yang dipakai sehari-hari.
+            {t("skills.title")}
           </h2>
         </Reveal>
 

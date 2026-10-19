@@ -49,5 +49,16 @@
   "projects": {
     "eyebrowprojects": "Proyek",
     "title": "Pengembangan & Desain UI"
+  },
+
+  "skills": {
+    "eyebrowskill": "Keahlian",
+    "title": "Toolkit yang dipakai sehari-hari"
+  },
+
+  "contact": {
+    "eyebrowcontact": "Kontak & Sosial Media",
+    "title": "Kamu punya sebuah proyek? Ayo bicarakan!",
+    "description": "Terbuka untuk proyek freelance, kolaborasi, atau sekadar ngobrol soal produk digital. Silakan hubungi lewat salah satu channel saya di bawah."
   }
 }

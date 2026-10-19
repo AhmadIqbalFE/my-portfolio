@@ -48,5 +48,16 @@
   "projects": {
     "eyebrowprojects": "Projects",
     "title": "Development & UI Design"
+  },
+
+  "skills": {
+    "eyebrowskill": "Skills",
+    "title": "Toolkit used daily"
+  },
+
+  "contact": {
+    "eyebrowcontact": "Contact & Social Media",
+    "title": "You have a project? Lets talk it!",
+    "description": "Open for freelance projects, collaborations, or just a chat about digital products. Feel free to reach out through any of my channels below."
   }
 }
