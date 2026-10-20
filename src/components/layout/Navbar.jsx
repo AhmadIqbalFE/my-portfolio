@@ -77,15 +77,6 @@ function Navbar() {
         </div>
 
         <button
-          className="btn-desktop navbar-contact-button"
-          onClick={() => scrollTo("kontak")}
-        >
-          <span className="btn-primary navbar-contact-inner">
-            {t("nav.buttoncontact")}
-          </span>
-        </button>
-
-        <button
           aria-label="Menu"
           onClick={() => setMenuOpen((value) => !value)}
           className="menu-toggle"

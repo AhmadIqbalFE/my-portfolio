@@ -47,7 +47,8 @@
 
   "projects": {
     "eyebrowprojects": "Projects",
-    "title": "Development & UI Design"
+    "title": "Development & UI Design",
+    "link": "View Projects"
   },
 
   "skills": {

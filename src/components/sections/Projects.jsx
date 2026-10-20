@@ -5,10 +5,25 @@ import ProjectModal from "../cards/ProjectModal";
 import { projects } from "../../data/projects";
 import Eyebrow from "../common/Eyebrow";
 import { useLanguage } from "../../i18n/LanguageContext";
+import { useMemo } from "react";
+
+const pick = (value, lang) =>
+  typeof value === "string" ? value : value?.[lang] ?? value?.id ?? "";
 
 function Projects() {
-  const { t } = useLanguage();
-  const [activeProject, setActiveProject] = useState(null);
+  const { t, lang } = useLanguage();
+  const [activeName, setActiveName] = useState(null);
+
+  const localizedProjects = useMemo(
+    () =>
+      projects.map((project) => ({
+        ...project,
+        type: pick(project.type, lang),
+        description: pick(project.description, lang),
+      })),
+    [lang]
+  );
+  const activeProject = localizedProjects.find((p) => p.name === activeName);
 
   return (
     <section id="proyek" className="section-pad projects-bg">
@@ -23,12 +38,12 @@ function Projects() {
         </Reveal>
 
         <div className="project-grid">
-          {projects.map((project, index) => (
+          {localizedProjects.map((project, index) => (
             <ProjectCard
               key={project.name}
               project={project}
               index={index}
-              onClick={() => setActiveProject(project)}
+              onClick={() => setActiveName(project.name)}
             />
           ))}
         </div>
@@ -37,7 +52,7 @@ function Projects() {
       {activeProject && (
         <ProjectModal
           project={activeProject}
-          onClose={() => setActiveProject(null)}
+          onClose={() => setActiveName(null)}
         />
       )}
     </section>

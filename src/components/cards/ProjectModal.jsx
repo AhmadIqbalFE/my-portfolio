@@ -1,8 +1,10 @@
 import { X, ExternalLink } from "lucide-react";
 import { useEffect } from "react";
 import ImageCarousel from "../ImageCarousel";
+import { useLanguage } from "../../i18n/LanguageContext";
 
 function ProjectModal({ project, onClose }) {
+  const { t } = useLanguage();
   useEffect(() => {
     const handleEsc = (e) => e.key === "Escape" && onClose();
     document.addEventListener("keydown", handleEsc);
@@ -60,7 +62,7 @@ function ProjectModal({ project, onClose }) {
               rel="noopener noreferrer"
               className="btn-primary modal-link"
             >
-              Lihat Project <ExternalLink size={15} />
+              {t("projects.link")} <ExternalLink size={15} />
             </a>
           )}
         </div>
