@@ -51,6 +51,11 @@
     "link": "View Projects"
   },
 
+  "experience": {
+    "eyebrowexperience": "Experience",
+    "title": "Social Activity"
+  },
+
   "skills": {
     "eyebrowskill": "Skills",
     "title": "Toolkit used daily"
